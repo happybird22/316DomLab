@@ -24,3 +24,9 @@ topMenuEl.classList.add(`flex-around`);
 
 //Part Three cont.
 
+menuLinks.forEach(function(link) {
+    const aTag = document.createElement(`a`);
+    aTag.setAttribute(`href`, link.href);
+    aTag.textContent = link.text;
+    topMenuEl.appendChild(aTag);
+});
